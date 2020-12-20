@@ -176,5 +176,3 @@ function get_skills_for_class(class_name){
         }
     }
 }
-
-function get_default_skills_for_class()
