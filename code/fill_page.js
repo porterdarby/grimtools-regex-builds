@@ -11,8 +11,8 @@ function fill_values(){
 
     let class_1 = document.getElementById("class_1");
     let class_2 = document.getElementById("class_2");
-    all_classes.forEach(obj => add_to_select(class_1, obj.class_name));
-    all_classes.forEach(obj => add_to_select(class_2, obj.class_name));
+    all_skills.forEach(obj => add_to_select(class_1, obj.class_name));
+    all_skills.forEach(obj => add_to_select(class_2, obj.class_name));
 }
 
 function add_skill_to_available_list(parent_div, skill) {
@@ -25,6 +25,7 @@ function add_skill_to_available_list(parent_div, skill) {
     checkbox.setAttribute("type", "checkbox");
     checkbox.id = skill.name;
     checkbox.tag = "available_skills";
+    checkbox.checked = skill.default;
     skill_div.appendChild(checkbox);
     parent_div.appendChild(skill_div);
 }
@@ -36,19 +37,18 @@ function create_div_for_skill(skills_class_div, skill){
     skills_class_div.appendChild(div);
 }
 
-function fill_skills_div(skills_class_div_id, class_select_id) {
-    let selected_class =  document.getElementById(class_select_id).value;
-    if (selected_class != ""){
+function fill_skills_div(skills_class_div_id, class_name) {
+    if (class_name !== ""){
         let skills_class_div = document.getElementById(skills_class_div_id);
         skills_class_div.innerHTML = "";
-        let skills = get_skills_for_class(selected_class);
-        console.log(selected_class);
-        console.log(skills);
+        let skills = get_skills_for_class(class_name);
         skills.forEach(skill => create_div_for_skill(skills_class_div, skill));
     }
 }
 
 function fill_skills(){
-    fill_skills_div("skills_class_1", "class_1");
-    fill_skills_div("skills_class_2", "class_2");
+    let class_name_1 = document.getElementById("class_1").value;
+    let class_name_2 = document.getElementById("class_2").value;
+    fill_skills_div("skills_class_1", class_name_1);
+    fill_skills_div("skills_class_2", class_name_2);
 }
