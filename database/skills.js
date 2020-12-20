@@ -1,6 +1,6 @@
-const skills = [
+const all_skills = [
     {
-        "class_name": "soldier",
+        "class_name": "Soldier",
         "class_skills": [
             {"name": "Blade Arc", "skills": [{"name": "Clean Sweep"}, {"name": "Laceration"}]},
             {"name": "Blitz", "skills": [{"name": "Blindside"}]},
@@ -24,7 +24,7 @@ const skills = [
         ]
     },
     {
-        "class_name": "demolitionist",
+        "class_name": "Demolitionist",
         "class_skills": [
             {"name": "Blackwater Cocktail", "skills": [{"name": "High Potency"}, {"name": "Demon Fire"}, {"name": "Agonizing Flames"}]},
             {"name": "Canister Bomb", "skills": [{"name": "Concussive Bomb"}, {"name": "Improved Casing"}]},
@@ -40,7 +40,7 @@ const skills = [
             {"name": "Vindicative Flame", "skills": [{"name": "Ulzuin's Wrath"}]}
         ]
     }, {
-        "class_name": "occultist",
+        "class_name": "Occultist",
         "class_skills": [
             {"name": "Blood of Dreeg", "skills": [{"name": "Aspect of the Guardian"}]},
             {"name": "Blood Pox", "skills": [{"name": "Fevered Rage"}, {"name": "Wasting"}, {"name": "Black Death"}]},
@@ -55,7 +55,7 @@ const skills = [
             {"name": "Summon Hellhound", "skills": [{"name": "Ember Claw"}, {"name": "Hellfire"}, {"name": "Infernal Breath"}]}
         ]
     }, {
-        "class_name": "nightblade",
+        "class_name": "Nightblade",
         "class_skills": [
             {"name": "Amarasta's Blade Burst", "skills": [{"name": "Lethal Assault"}]},
             {"name": "Blade Barrier, Blade Trap", "skills": [{"name": "Devouring Blades"}]},
@@ -71,7 +71,7 @@ const skills = [
             {"name": "Blade Spirit", "skills": []}
         ]
     }, {
-        "class_name": "aranist",
+        "class_name": "Aranist",
         "class_skills": [
             {"name": "Albrecht's Aether Ray", "skills": [{"name": "Tainted Power"}, {"name": "Disintegration"}]},
             {"name": "Callidor's Tempest", "skills": [{"name": "Wrath of Agrivix"}, {"name": "Inferno"}]},
@@ -89,7 +89,7 @@ const skills = [
             {"name": "Star Pact", "skills": []}
         ]
     }, {
-        "class_name": "shaman",
+        "class_name": "Shaman",
         "class_skills": [
             {"name": "Brute Force", "skills": [{"name": "Feral Hunger"}, {"name": "Upheaval"}]},
             {"name": "Devouring Swarm", "skills": []},
@@ -106,7 +106,7 @@ const skills = [
             {"name": "Wind Devil", "skills": [{"name": "Raging Tempest"}, {"name": "Maelstrom"}]}
         ]
     }, {
-        "class_name": "inquisitor",
+        "class_name": "Inquisitor",
         "class_skills": [
             {"name": "Flames of Ignaffar", "skills": [{"name": "Intensify"}, {"name": "Infernal Purge"}, {"name": "Endless Flame"}]},
             {"name": "Horn of Gandarr", "skills": []},
@@ -126,7 +126,7 @@ const skills = [
             {"name": "Aura of Conviction", "skills": []}
         ]
     }, {
-        "class_name": "necromancer",
+        "class_name": "Necromancer",
         "class_skills": [
             {"name": "Bone Harvest", "skills": [{"name": "Harvester of Death"}, {"name": "Dread"}, {"name": "Soul Harvest"}]},
             {"name": "Call of the Grave", "skills": []},
@@ -146,7 +146,7 @@ const skills = [
             {"name": "Summon Blight Fiend", "skills": [{"name": "Unstable Anomaly"}, {"name": "Rotting Fumes"}, {"name": "Blight Burst"}]}
         ]
     }, {
-        "class_name": "oathkeeper",
+        "class_name": "Oathkeeper",
         "class_skills": [
             {"name": "Aegis of Menhir", "skills": [{"name": "Avenging Shield"}, {"name": "Aegis of Thorns"}, {"name": "Reprisal"}]},
             {"name": "Ascension", "skills": [{"name": "Clarity of Purpose"}]},
@@ -165,3 +165,8 @@ const skills = [
         ]
     }
 ]
+
+
+function get_skills_for_class(class_name){
+    all_skills.forEach(obj => function (){if (obj.class_name == class_name){return obj.class_skills}})
+}

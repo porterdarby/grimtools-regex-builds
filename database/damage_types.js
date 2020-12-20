@@ -1,4 +1,4 @@
-const damage_types = [
+const all_damage_types = [
     {"name": "Physical", "type": "direct", "resistance": "Physical"},
     {"name": "Fire", "type": "direct", "resistance": "Fire"},
     {"name": "Cold", "type": "direct", "resistance": "Cold"},
