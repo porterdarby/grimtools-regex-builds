@@ -74,6 +74,8 @@ function add_message(regex_div, message){
     div.appendChild(document.createTextNode(message.message_type));
     let text_area = document.createElement("textarea");
     text_area.textContent= message.message;
+    text_area.rows = 1;
+    text_area.columns = 100;
     div.appendChild(text_area);
     regex_div.appendChild(div);
 }
