@@ -1,4 +1,4 @@
-let skills = {
+const skills = {
     "savagery": [
         "tenacity of the board",
         "storm touched"

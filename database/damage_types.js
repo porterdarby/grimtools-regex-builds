@@ -1,4 +1,4 @@
-let direct_damage_types = [
+const direct_damage_types = [
     "Physical",
     "Fire",
     "Cold",
@@ -10,7 +10,7 @@ let direct_damage_types = [
     "Chaos"
 ];
 
-let dot_damage_types = [
+const dot_damage_types = [
     "Internal Trauma",
     "Burn",
     "Frostburn",

@@ -1,4 +1,4 @@
-let classes = {
+const classes = {
     "soldier": [
         "fighting spirit",
         "field command",
