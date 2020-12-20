@@ -25,6 +25,7 @@ function add_player_messaging(output, skills, damage_types) {
 }
 
 function add_pet_messaging(output, skills, damage_types) {
+    let insert = "bonus to all pets";
     output.push({
         "message_type": "skill and damage",
         "message": "/(" + skills + ")" + return_char + any_char + insert + any_char + "(" + damage_types + ") damage" + return_char + level + "/"
@@ -44,6 +45,7 @@ function add_pet_messaging(output, skills, damage_types) {
 }
 
 function add_retaliation_messaging(output, skills, damage_types){
+    let insert = "retaliation";
     output.push({
         "message_type": "skills and damage",
         "message": "/" + insert + any_char + "(" + skills + ")" + level + "/"
