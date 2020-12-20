@@ -828,7 +828,6 @@ const all_skills = [
             {
                 "name": "Righteous Fervor",
                 "skills": [
-                    {"name": "Dreeg's Reproach", "default": false},
                     {"name": "Consecration", "default": false},
                     {"name": "Retribution", "default": false}
                 ],
