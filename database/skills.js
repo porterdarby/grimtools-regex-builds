@@ -7,7 +7,7 @@ const all_skills = [
             {"name": "Cadence", "skills": [{"name": "Fighting Form"}, {"name": "Deadly Momentum"}]},
             {"name": "Forcewave", "skills": [{"name": "Rending Force"}, {"name": "Internal Trauma"}]},
             {"name": "Overguard", "skills": []},
-            {"name": "War Cry" [{"name": "Break Morale"}]},
+            {"name": "War Cry", "skills": [{"name": "Break Morale"}]},
             {"name": "Decorated Soldier", "skills": []},
             {"name": "Fighting Spirit", "skills": []},
             {"name": "Markovian's Advantage", "skills": []},
