@@ -34,15 +34,15 @@ function create_div_for_skill(skills_class_div, skill){
     skills_class_div.appendChild(div)
 }
 
-function fill_skills_div(skills_class_div, class_select) {
-    let selected_class = class_select.value;
+function fill_skills_div(skills_class_div_id, class_select_id) {
+    let selected_class =  document.getElementById(class_select_id).value;
     let skills = get_skills_for_class(selected_class)
     console.log(selected_class)
     console.log(skills)
-    skills.forEach(skill => create_div_for_skill(skills_class_div, skill))
+    skills.forEach(skill => create_div_for_skill(document.getElementById(skills_class_div_id), skill))
 }
 
 function fill_skills(){
-    fill_skills_div(document.getElementById("skills_class_1"), document.getElementById("class_1"))
-    fill_skills_div(document.getElementById("skills_class_2"), document.getElementById("class_2"))
+    fill_skills_div("skills_class_1", "class_1")
+    fill_skills_div("skills_class_2", "class_2")
 }

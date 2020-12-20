@@ -168,5 +168,9 @@ const all_skills = [
 
 
 function get_skills_for_class(class_name){
-    all_skills.forEach(obj => function (){if (obj.class_name == class_name){return obj.class_skills}})
+    for (let i=0; i<all_skills.length; i++){
+        if (all_skills[i].class_name == class_name){
+            return all_skills[i].class_skills;
+        }
+    }
 }
