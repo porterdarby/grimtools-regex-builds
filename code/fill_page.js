@@ -25,7 +25,7 @@ function add_skill_to_available_list(parent_div, skill) {
     let checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
     checkbox.id = skill.name;
-    checkbox.tagName = "available_skills";
+    checkbox.name = "available_skills";
     checkbox.checked = skill.default;
     skill_div.appendChild(checkbox);
     parent_div.appendChild(skill_div);
