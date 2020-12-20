@@ -17,6 +17,7 @@ function fill_values(){
 
 function add_skill_to_available_list(parent_div, skill) {
     let skill_div = document.createElement("div");
+    skill_div.style.display = "inline-block";
     let name = document.createTextNode(skill.name);
     skill_div.appendChild(name);
     let checkbox = document.createElement("input");
