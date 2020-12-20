@@ -1,4 +1,4 @@
-skills = {
+let skills = {
     "savagery": [
         "tenacity of the board",
         "storm touched"
@@ -94,4 +94,4 @@ skills = {
     "callidor's tempest": [
         "inferno"
     ]
-}
+};

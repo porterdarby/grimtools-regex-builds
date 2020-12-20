@@ -1,4 +1,4 @@
-classes = {
+let classes = {
     "soldier": [
         "fighting spirit",
         "field command",
@@ -56,4 +56,4 @@ classes = {
         "arcane will",
         "nullification"
     ]
-}
+};

@@ -1,4 +1,4 @@
-direct_damage_types = [
+let direct_damage_types = [
     "Physical",
     "Fire",
     "Cold",
@@ -8,9 +8,9 @@ direct_damage_types = [
     "Pierce",
     "Aether",
     "Chaos"
-]
+];
 
-dot_damage_types = [
+let dot_damage_types = [
     "Internal Trauma",
     "Burn",
     "Frostburn",
@@ -18,4 +18,4 @@ dot_damage_types = [
     "Poison",
     "Vitality Decay",
     "Bleeding"
-]
+];
