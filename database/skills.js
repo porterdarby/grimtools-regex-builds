@@ -95,7 +95,7 @@ const all_skills = [
             {"name": "Devouring Swarm", "skills": []},
             {"name": "Grasping Vines", "skills": [{"name": "Entangling Vines"}]},
             {"name": "Primal Strike", "skills": [{"name": "Thunderous Strike"}, {"name": "Torrent"}, {"name": "Storm Surge"}]},
-            {"name": "Savagery", "skills": [{"name": "Might of the Bear"}, {"name": "Tenacity of the Boar"}, {"name": "Storm Touched"}]},
+            {"name": "Savagery", "skills": [{"name": "Tenacity of the Boar"}, {"name": "Storm Touched"}]},
             {"name": "Mogdrogen's Pact", "skills": [{"name": "Heart of the Wild"}, {"name": "Oak Skin"}]},
             {"name": "Primal Bond", "skills": []},
             {"name": "Stormcaller's Pact", "skills": []},
