@@ -37,6 +37,8 @@ function create_div_for_skill(skills_class_div, skill){
 function fill_skills_div(skills_class_div, class_select) {
     let selected_class = class_select.value;
     let skills = get_skills_for_class(selected_class)
+    console.log(selected_class)
+    console.log(skills)
     skills.forEach(skill => create_div_for_skill(skills_class_div, skill))
 }
 
