@@ -11,38 +11,38 @@ function fill_values(){
 
     let class_1 = document.getElementById("class_1");
     let class_2 = document.getElementById("class_2");
-    all_classes.forEach(obj => add_to_select(class_1, obj.class_name))
-    all_classes.forEach(obj => add_to_select(class_2, obj.class_name))
+    all_classes.forEach(obj => add_to_select(class_1, obj.class_name));
+    all_classes.forEach(obj => add_to_select(class_2, obj.class_name));
 }
 
 function add_skill_to_available_list(parent_div, skill) {
-    let skill_div = document.createElement("div")
-    let name = document.createTextNode(skill.name)
-    skill_div.appendChild(name)
+    let skill_div = document.createElement("div");
+    let name = document.createTextNode(skill.name);
+    skill_div.appendChild(name);
     let checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
-    checkbox.id = skill.name
-    checkbox.tag = "available_skills"
-    skill_div.appendChild(checkbox)
-    parent_div.appendChild(div)
+    checkbox.id = skill.name;
+    checkbox.tag = "available_skills";
+    skill_div.appendChild(checkbox);
+    parent_div.appendChild(skill_div);
 }
 
 function create_div_for_skill(skills_class_div, skill){
     let div = document.createElement("div")
     add_skill_to_available_list(div, skill);
-    skill.class_skills.forEach(dependent_skill => add_skill_to_available_list(div, dependent_skill))
-    skills_class_div.appendChild(div)
+    skill.skills.forEach(dependent_skill => add_skill_to_available_list(div, dependent_skill));
+    skills_class_div.appendChild(div);
 }
 
 function fill_skills_div(skills_class_div_id, class_select_id) {
     let selected_class =  document.getElementById(class_select_id).value;
-    let skills = get_skills_for_class(selected_class)
-    console.log(selected_class)
-    console.log(skills)
-    skills.forEach(skill => create_div_for_skill(document.getElementById(skills_class_div_id), skill))
+    let skills = get_skills_for_class(selected_class);
+    console.log(selected_class);
+    console.log(skills);
+    skills.forEach(skill => create_div_for_skill(document.getElementById(skills_class_div_id), skill));
 }
 
 function fill_skills(){
-    fill_skills_div("skills_class_1", "class_1")
-    fill_skills_div("skills_class_2", "class_2")
+    fill_skills_div("skills_class_1", "class_1");
+    fill_skills_div("skills_class_2", "class_2");
 }
