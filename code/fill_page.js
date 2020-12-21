@@ -40,9 +40,9 @@ function create_div_for_skill(skills_class_div, skill){
 
 function fill_skills_div(skills_class_div_id, class_name_id) {
     let class_name = document.getElementById(class_name_id).value;
+    let skills_class_div = document.getElementById(skills_class_div_id);
+    skills_class_div.innerHTML = "";
     if (class_name !== ""){
-        let skills_class_div = document.getElementById(skills_class_div_id);
-        skills_class_div.innerHTML = "";
         let skills = get_skills_for_class(class_name);
         skills.forEach(skill => create_div_for_skill(skills_class_div, skill));
     }
