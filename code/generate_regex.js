@@ -82,11 +82,25 @@ function add_message(regex_div, message){
     regex_div.appendChild(div);
 }
 
+function add_elemental_damage_type(possible_damage_types, damage_type){
+    let add_elemental = false;
+    let elemental_damage_types = ["Fire", "Cold", "Lightning"];
+    
+    elemental_damage_types.forEach(elemental_damage_type => {
+        if (elemental_damage_type === damage_type){
+            add_elemental = true;
+        }
+    })
+
+    if (add_elemental){
+        possible_damage_types.push("Elemental");
+    }
+}
+
 function generate_regex() {
     let source_type = document.getElementById("source_type").value;
     let damage_type = document.getElementById("damage_type").value;
     let checked_skills = get_checked_skills();
-    let elemental_damage_types = ["Fire", "Cold", "Lightning"];
     let classes = [
         document.getElementById("class_1").value,
         document.getElementById("class_2").value
@@ -96,9 +110,8 @@ function generate_regex() {
     let possible_damage_types = [];
     possible_damage_types.push("All");
     possible_damage_types.push(damage_type);
-    if (damage_type in elemental_damage_types) {
-        possible_damage_types.push("Elemental");
-    }
+
+    add_elemental_damage_type(possible_damage_types, damage_type)
 
     checked_skills.push(classes[0]);
     checked_skills.push(classes[1]);
