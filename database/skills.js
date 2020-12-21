@@ -313,7 +313,6 @@ const all_skills = [
             {
                 "name": "Phantasmal Blades",
                 "skills": [
-                    {"name": "Frenetic Throw", "default": false},
                     {"name": "Heart Seeker", "default": false},
                     {"name": "Nether Edge", "default": false}
                 ],
@@ -330,7 +329,6 @@ const all_skills = [
             {
                 "name": "Ring of Steel",
                 "skills": [
-                    {"name": "Ring of Frost", "default": false},
                     {"name": "Circle of Slaughter", "default": false}
                 ],
                 "default": false
@@ -352,7 +350,7 @@ const all_skills = [
                 "name": "Dual Blades",
                 "skills": [
                     {"name": "Belgothian's Shears", "default": false},
-                    {"name": "Hidden Hands", "default": false},
+                    {"name": "Nidalla's Hidden Hand", "default": false},
                     {"name": "Amarasta's Quick Cut", "default": false},
                     {"name": "Whirling Death", "default": false},
                     {"name": "Execution", "default": false}
@@ -512,7 +510,6 @@ const all_skills = [
             {
                 "name": "Primal Strike",
                 "skills": [
-                    {"name": "Thunderous Strike", "default": false},
                     {"name": "Torrent", "default": false},
                     {"name": "Storm Surge", "default": false}
                 ],
@@ -621,7 +618,6 @@ const all_skills = [
             {
                 "name": "Storm Box of Elgoloth",
                 "skills": [
-                    {"name": "Allagast's Arcane Net", "default": false},
                     {"name": "Lightning Tether", "default": false}
                 ],
                 "default": false
@@ -690,7 +686,6 @@ const all_skills = [
             {
                 "name": "Bone Harvest",
                 "skills": [
-                    {"name": "Harvester of Death", "default": false},
                     {"name": "Dread", "default": false},
                     {"name": "Soul Harvest", "default": false}
                 ],
@@ -704,7 +699,6 @@ const all_skills = [
             {
                 "name": "Drain Essence",
                 "skills": [
-                    {"name": "Gravechill", "default": false},
                     {"name": "Hungering Reach", "default": false},
                     {"name": "Decomposition", "default": false}
                 ],
@@ -797,7 +791,6 @@ const all_skills = [
                 "name": "Aegis of Menhir",
                 "skills": [
                     {"name": "Avenging Shield", "default": false},
-                    {"name": "Aegis of Thorns", "default": false},
                     {"name": "Reprisal", "default": false}
                 ],
                 "default": false
@@ -835,7 +828,6 @@ const all_skills = [
             {
                 "name": "Vire's Might",
                 "skills": [
-                    {"name": "Volcanic Might", "default": false},
                     {"name": "Volcanic Stride", "default": false},
                     {"name": "Tectonic Shift", "default": false}
                 ],
