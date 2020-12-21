@@ -94,6 +94,7 @@ function generate_regex() {
     let regex_div = document.getElementById("regex_div");
 
     let possible_damage_types = [];
+    possible_damage_types.push("All");
     possible_damage_types.push(damage_type);
     if (damage_type in elemental_damage_types) {
         possible_damage_types.push("Elemental");
