@@ -71,15 +71,17 @@ function add_both_skills_message(output, classes){
     });
 }
 
-function add_message(regex_div, message){
-    let div = document.createElement("div");
-    div.appendChild(document.createTextNode(message.message_type));
-    let text_area = document.createElement("textarea");
-    text_area.textContent= message.message;
-    text_area.rows = 1;
-    text_area.columns = 100;
-    div.appendChild(text_area);
-    regex_div.appendChild(div);
+function add_message(table_div, message){
+    new_row = table_div.insertRow(-1)
+    message_cell = new_row.insertCell(0)
+    message_cell.appendChild(document.createTextNode(message.message_type))
+
+    regex_cell = new_row.insertCell(1)
+    let link = document.createElement('a');
+    link.setAttribute('href', `https:\/\/www.grimtools.com/db/search?query=${message.message}&in_description=1&exact_match=0`)
+    link.setAttribute('target', '_blank')
+    link.innerHTML=message.message
+    regex_cell.append(link)
 }
 
 function add_elemental_damage_type(possible_damage_types, damage_type){
@@ -133,5 +135,9 @@ function generate_regex() {
 
     regex_div.innerHTML = "";
 
-    output.forEach(message => add_message(regex_div, message))
+    let table = document.createElement("table")
+    table.className="table"
+    regex_div.appendChild(table)
+
+    output.forEach(message => add_message(table, message))
 }
