@@ -119,7 +119,6 @@ const all_skills = [
             {
                 "name": "Blackwater Cocktail",
                 "skills": [
-                    {"name": "High Potency", "default": false},
                     {"name": "Demon Fire", "default": false},
                     {"name": "Agonizing Flames", "default": false}
                 ],
@@ -128,7 +127,6 @@ const all_skills = [
             {
                 "name": "Canister Bomb",
                 "skills": [
-                    {"name": "Concussive Bomb", "default": false},
                     {"name": "Improved Casing", "default": false}
                 ],
                 "default": false
@@ -168,7 +166,6 @@ const all_skills = [
             {
                 "name": "Stun Jacks",
                 "skills": [
-                    {"name": "Quick Jacks", "default": false},
                     {"name": "Full Spread", "default": false}
                 ],
                 "default": false
@@ -219,7 +216,6 @@ const all_skills = [
             {
                 "name": "Bloody Pox",
                 "skills": [
-                    {"name": "Fevered Rage", "default": false},
                     {"name": "Wasting", "default": false},
                     {"name": "Black Death", "default": false}
                 ],
@@ -241,7 +237,6 @@ const all_skills = [
                 "name": "Dreeg's Evil Eye",
                 "skills": [
                     {"name": "Blood Burst", "default": false},
-                    {"name": "Focused Gaze", "default": false},
                     {"name": "Terrifying Gaze", "default": false},
                     {"name": "Vile Eruption", "default": false}
                 ],
@@ -269,7 +264,6 @@ const all_skills = [
             {
                 "name": "Solael's Witchfire",
                 "skills": [
-                    {"name": "Consecrated Blade", "default": false},
                     {"name": "Second Rite", "default": false}
                 ],
                 "default": false
