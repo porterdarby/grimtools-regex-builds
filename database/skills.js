@@ -161,7 +161,7 @@ const all_skills = [
                 "name": "Mortar Trap",
                 "skills": [
                     {"name": "Heavy Ordnance", "default": false},
-                    {"name": "\"The Big One\"", "default": false}
+                    {"name": "The Big One", "default": false}
                 ],
                 "default": false
             },
