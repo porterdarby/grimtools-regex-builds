@@ -3,6 +3,7 @@ const all_damage_types = [
     {"name": "Fire", "type": "direct", "resistance": "Fire"},
     {"name": "Cold", "type": "direct", "resistance": "Cold"},
     {"name": "Lightning", "type": "direct", "resistance": "Lightning"},
+    {"name": "Elemental", "type": "direct", "resistance": "Elemental"},
     {"name": "Acid", "type": "direct", "resistance": "Acid"},
     {"name": "Vitality", "type": "direct", "resistance": "Vitality"},
     {"name": "Pierce", "type": "direct", "resistance": "Pierce"},
