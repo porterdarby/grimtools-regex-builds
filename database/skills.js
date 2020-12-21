@@ -191,14 +191,14 @@ const all_skills = [
                 "default": false
             },
             {
-                "name": "Flamed Touched",
+                "name": "Flame Touched",
                 "skills": [
                     {"name": "Temper", "default": true}
                 ],
                 "default": true
             },
             {
-                "name": "Vindicative Flame",
+                "name": "Vindictive Flame",
                 "skills": [
                     {"name": "Ulzuin's Wrath", "default": false}
                 ],
