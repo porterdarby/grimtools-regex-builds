@@ -16,6 +16,15 @@ function fill_values() {
 }
 
 function add_skill_to_available_list(skill_row, skill) {
+    let checkbox_column = document.createElement("td");
+    let checkbox = document.createElement("input");
+    checkbox.setAttribute("type", "checkbox");
+    checkbox.id = skill.name;
+    checkbox.name = "available_skills";
+    checkbox.checked = skill.default;
+    checkbox_column.appendChild(checkbox);
+    skill_row.appendChild(checkbox_column);
+
     let name_column = document.createElement("td");
     let img = document.createElement("img");
     img.alt = skill.name;
@@ -27,15 +36,6 @@ function add_skill_to_available_list(skill_row, skill) {
     let name = document.createTextNode(skill.name);
     name_column.appendChild(name);
     skill_row.appendChild(name_column);
-
-    let checkbox_column = document.createElement("td");
-    let checkbox = document.createElement("input");
-    checkbox.setAttribute("type", "checkbox");
-    checkbox.id = skill.name;
-    checkbox.name = "available_skills";
-    checkbox.checked = skill.default;
-    checkbox_column.appendChild(checkbox)
-    skill_row.appendChild(checkbox_column)
 }
 
 function add_empty_column(skill_row) {
