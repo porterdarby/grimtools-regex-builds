@@ -217,7 +217,7 @@ const all_skills = [
                 "default": true
             },
             {
-                "name": "Blood Pox",
+                "name": "Bloody Pox",
                 "skills": [
                     {"name": "Fevered Rage", "default": false},
                     {"name": "Wasting", "default": false},
