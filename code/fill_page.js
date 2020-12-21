@@ -75,7 +75,7 @@ function fill_skills() {
         skills_class_div.innerHTML = "";
         if (class_name !== "") {
             let table = document.createElement("table");
-            table.style.fontSize = "9";
+            table.style.fontSize = "12px";
             skills_class_div.appendChild(table);
             let skills = get_skills_for_class(class_name);
             let max_dependencies = 1;
