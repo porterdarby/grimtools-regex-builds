@@ -305,7 +305,12 @@ const all_skills = [
                 "default": false
             },
             {
-                "name": "Blade Barrier, Blade Trap",
+                "name": "Blade Barrier",
+                "skills": [],
+                "default": false
+            },
+            {
+                "name": "Blade Trap",
                 "skills": [
                     {"name": "Devouring Blades", "default": false}
                 ],
