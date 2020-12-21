@@ -22,6 +22,11 @@ function add_skill_to_available_list(skill_row, skill) {
     checkbox.id = skill.name;
     checkbox.name = "available_skills";
     checkbox.checked = skill.default;
+
+    checkbox_column.style.borderLeft = "1px";
+    checkbox_column.style.borderTop = "1px";
+    checkbox_column.style.borderBottom = "1px";
+
     checkbox_column.appendChild(checkbox);
     skill_row.appendChild(checkbox_column);
 
@@ -35,6 +40,10 @@ function add_skill_to_available_list(skill_row, skill) {
 
     let name = document.createTextNode(skill.name);
     name_column.appendChild(name);
+
+    name_column.style.borderRight = "1px";
+    name_column.style.borderTop = "1px";
+    name_column.style.borderBottom = "1px";
     skill_row.appendChild(name_column);
 }
 
