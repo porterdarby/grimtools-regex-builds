@@ -39,7 +39,7 @@ function add_skill_to_available_list(skill_row, skill) {
 }
 
 function add_empty_column(skill_row) {
-    for (let i = 0; i < 2; i + {}) {
+    for (let i = 0; i < 2; i ++) {
         let empty_column = document.createElement("td");
         empty_column.innerHTML = "&nbsp;";
         skill_row.appendChild(empty_column);
