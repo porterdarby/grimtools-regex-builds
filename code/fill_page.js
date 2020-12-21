@@ -20,12 +20,12 @@ function add_skill_to_available_list(parent_div, skill) {
     skill_div.style.display = "inline-block";
     skill_div.style.border = "1px";
     skill_div.style.borderColor = "black";
+    let img = document.createElement("img");
+    img.alt = skill.name;
+    img.src = "images/" + skill.name.replace(/ /g, "_") + ".png";
+    skill_div.appendChild(img)
     let name = document.createTextNode(skill.name);
     skill_div.appendChild(name);
-    let img = document.createElement("img");
-    img.alt = skill.name
-    img.src = "images/" + skill.name + ".png";
-    skill_div.appendChild(img)
     let checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
     checkbox.id = skill.name;
